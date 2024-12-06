@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Создание заявки</title>
+</head>
+<body>
+    <a href="Create.html">Сздание</a>
+    <a href="Order.html">Список</a>
+
+    <iframe name="clear" style="display: none;"></iframe>
+    <form target="clear" action="http://localhost:5041/orders" method="post" />
+    <input required placeholder="Номер" name="number" type="number" />
+    <input required name="startdate" type="date" />
+    <input required placeholder="Вид оргтехники" name="orgteh" type="text" />
+    <input required placeholder="Модуль" name="modul" type="text" />
+    <input required placeholder="Описание" name="description" type="text" />
+    <input required placeholder="ФИО" name="fio" type="text" />
+    <input required placeholder="Номер телефона" name="phone" type="text" />
+    <select name = "status">
+        <option>новая заявка</option>
+        <option>в процессе ремонта</option>
+        <option>завершена</option>
+    </select>
+    <button>Отправить</button>
+</body>
+</html>
